@@ -1,54 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-    <title>Grade Calculater</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grade calculator</title>
+  </head>
+  <body>
 
-<div class="container">
-    <div class="row">
+    <div class="container">
+      <div class="row">
         <div class="left">
-<input type="number" id="math" class="form-control" placeholder="math"><br>
-<input type="number" id="physics" class="form-control" placeholder="physics"><br>
-<input type="number" id="chemistry" class="form-control" placeholder="chemistry"><br>
-<input type="number" id="english" class="form-control" placeholder="english"><br>
-<input type="number" id="urdu" class="form-control" placeholder="urdu"><br>
-<button type="button" >Calculate</button>
+          <input
+            type="number"
+            id="math"
+           
+            placeholder="math"
+          /><br />
+          <input
+            type="number"
+            id="physics"
+        
+            placeholder="physics"
+          /><br />
+          <input
+            type="number"
+             id="chemistry"
+         
+            placeholder="chemistry"
+          /><br />
+          <input
+            type="number"
+            id="english"
+          
+            placeholder="english"
+          /><br />
+          <input
+            type="number"
+            id="urdu"
+             
+            placeholder="urdu"
+          /><br />
+          <button type="button" class="btn" onclick="getres()">Calculate</button>
         </div>
+      </div>
+
+      <div class="right">
+        <div class="colum">
+          <table>
+            <tr>
+              <td>Total Marks:</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Obtained Marks:</td>
+              <td id="obt"></td>
+            </tr>
+            <tr>
+              <td>Percentage:</td>
+              <td id="Per"></td>
+            </tr>
+            <tr>
+              <td>Grade:</td>
+              <td id="grade"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
-</div>
-<div class="right">
-    <table>
-        <tr>
-            <td>Total Marks</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Obtained Marks</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Percentage</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Grade</td>
-            <td></td>
-        </tr>
 
-
-
-
-
-
-
-    </table>
-</div>
-
-     
     <script type="module" src="./app.js"></script>
-</body>
+  </body>
 </html>
